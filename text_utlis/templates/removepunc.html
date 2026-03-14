@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analyzed Text</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    background:white;
+    width:650px;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+    color:#333;
+}
+
+.result-box{
+    background:#f5f7ff;
+    padding:20px;
+    border-radius:8px;
+    font-size:18px;
+    line-height:1.6;
+    color:#444;
+    border-left:5px solid #667eea;
+}
+
+.back-btn{
+    display:block;
+    text-align:center;
+    margin-top:25px;
+    text-decoration:none;
+    background:#667eea;
+    color:white;
+    padding:12px;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    background:#4c5bd4;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Your Analyzed Text - {{ purpose }}</h1>
+
+<div class="result-box">
+{{ Analyzed_text }}
+</div>
+
+<a href="/" class="back-btn">Analyze Another Text</a>
+
+</div>
+
+</body>
+</html>
